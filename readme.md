@@ -1,8 +1,8 @@
 # AOSP build
 
-Done on MacOS. Two try:
+Done on MacOS. Done 2 times:
 - 2019-02: Description on this readme
-- 2020-07: CF `aosp_setup.sh` and this readme
+- 2020-07: Via home-made script `aosp_setup.sh` and this readme
 
 ## First try to compile - 2019-02
 
