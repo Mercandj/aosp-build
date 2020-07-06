@@ -1,11 +1,19 @@
-# Notes
+# AOSP build
+
+Done on MacOS. Two try:
+- 2019-02: Description on this readme
+- 2020-07: CF `aosp_setup.sh` and this readme
+
+## First try to compile - 2019-02
+
+### Notes
 
 - Build done on Mac OS Mojave
 - I was compiling that on an external SSD 500Go mac case sensitive partition.
 - After cloning and building, the directory size: 160 Go.
 - After the cloning step, when trying to `make`, I got this error `Could not find a supported mac sdk: [“10.10” “10.11” “10.12” “10.13”]` resolved [here](https://stackoverflow.com/questions/50760701/could-not-find-a-supported-mac-sdk-10-10-10-11-10-12-10-13?noredirect=1&lq=1) thanks to this [repo](https://github.com/phracker/MacOSX-SDKs). Complete your missing versions on your local directory `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs`
 
-# Clone
+### Clone
 
 Check https://source.android.com/setup/build/requirements
 
@@ -20,7 +28,7 @@ Check the version [here](https://source.android.com/setup/start/build-numbers.ht
 
 Takes more than 10 hours on my computer
 
-# Build
+### Build
 
 Check https://source.android.com/setup/build/building
 
@@ -31,13 +39,13 @@ Check https://source.android.com/setup/build/building
 
 Takes more than 3 hours on my computer
 
-# Create zip file
+### Create zip file
 
 Check https://stackoverflow.com/questions/36949605/creating-flashable-zip-from-android-source-code
 
 > If you would create a full update zip package (system, boot, and recovery partitions), you can use for a hypothetical tardis device:
 
-### first, build the target-files .zip
+**first, build the target-files .zip**
 
 * `. build/envsetup.sh && lunch aosp_arm-eng`
 * `mkdir dist_output`
@@ -55,6 +63,4 @@ done.
 * `ls -l ota_update.zip`
 -rw-r----- 1 user eng 62236561 Sep 29 15:58 ota_update.zip
 
-----
-
-Jonathan Mercandalli
+# 
