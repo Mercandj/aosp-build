@@ -40,5 +40,13 @@ lunch aosp_sargo-userdebug # Pixel 3a
 echo "[Mercandalli][Build] m"
 m
 
+# If error at "m" step on MacOs
+# "internal error: Could not find a supported mac sdk: 
+# ["10.10" "10.11" "10.12" "10.13" "10.14"]"
+# Resolved [here](https://stackoverflow.com/questions/50760701/could-not-find-a-supported-mac-sdk-10-10-10-11-10-12-10-13?noredirect=1&lq=1)
+# thanks to this [repo](https://github.com/phracker/MacOSX-SDKs).
+# Complete your missing versions on your local directory
+# `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs`
+
 # ####                              Building                                #### #
 # ############################################################################## #
