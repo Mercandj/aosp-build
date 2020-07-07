@@ -35,7 +35,7 @@ echo "[Mercandalli][Build] envsetup.sh"
 source build/envsetup.sh
 
 echo "[Mercandalli][Build] lunch"
-lunch # 3
+lunch aosp_sargo-userdebug # Pixel 3a
 
 echo "[Mercandalli][Build] m"
 m
